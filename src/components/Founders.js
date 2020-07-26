@@ -43,7 +43,7 @@ const Founders = () => {
           </li>
         )
       })}
-      <Img src={Microdotations} alt="realizujemy MikroDotacje" />
+      <Img src={Microdotations} alt="realizujemy MikroDotacje2020" />
     </ul>
   )
 }
