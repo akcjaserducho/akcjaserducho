@@ -1,0 +1,21 @@
+.cooperation-list {
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 50px auto 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cooperation-list__item {
+    padding: 10px;
+    margin: 10px;
+}
+
+.cooperation-item__img {
+    width: 140px;
+    @media (min-width: 1024px) {
+        width: 200px;
+    }
+}

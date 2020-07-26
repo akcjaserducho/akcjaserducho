@@ -1,0 +1,97 @@
+.about-article {
+    margin-bottom: 100px;
+    min-height: 100vh;
+    @media(min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        min-height: 80vh;
+    }
+    .section__title {
+        width: 100%;
+    }
+    .section__text {
+        margin: auto;
+        width: 90%;
+        @media(min-width: 768px) {
+            flex-basis: 45%;
+            margin-right: 5%;
+        }
+        
+    }
+    .about-article__img-box {
+        height: 100vh;
+        @media(min-width: 768px) {
+            flex-basis: 50%;
+            height: 80vh;
+        }
+        .about-article__img {
+            width: 90%;
+            height: 100%;
+            margin: 30px auto 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            @media(min-width: 600px) {
+                width: 70%;
+            }
+            @media(min-width: 768px) {
+                margin: 0 auto;
+            }
+        }
+    }
+    
+}
+
+
+
+.mission {
+    width: 90%;
+    margin: 50px auto;
+    @media (min-width: 768px) {
+        width: 90%;
+    }
+}
+
+.docs {
+    margin: 100px 0;
+    .docs-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &__item {
+            margin: 20px;
+        }
+    }
+}
+
+// .about-gallery__img1 {
+//     background-image: url("../images/about-gallery/img1.jpg");
+// }
+
+// .about-gallery__img2 {
+//     background-image: url("../images/about-gallery/img2.jpg");
+// }
+
+// .about-gallery__img3 {
+//     background-image: url("../images/about-gallery/img3.jpg");
+// }
+
+// .about-gallery__img4 {
+//     background-image: url("../images/about-gallery/img4.jpg");
+// }
+
+// .about-gallery__img5 {
+//     background-image: url("../images/about-gallery/img5.jpg");
+// }
+
+// .about-gallery__img6 {
+//     background-image: url("../images/about-gallery/img6.jpg");
+// }
+
+// .about-gallery__img7 {
+//     background-image: url("../images/about-gallery/img7.jpg");
+// }
+
+// .about-gallery__img8 {
+//     background-image: url("../images/about-gallery/img8.jpg");
+// }

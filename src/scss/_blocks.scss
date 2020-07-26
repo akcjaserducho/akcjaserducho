@@ -1,0 +1,36 @@
+@import './variables';
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline-color: $primary-color;
+    box-sizing: border-box;
+}
+
+.page {
+    &__header {
+        .header__title {
+        }
+    }
+}
+
+.section {
+    &__title {
+        margin: 40px 0;
+        text-align: center;
+        @media (min-width: 1024px) {
+            margin: 60px 0;
+        }
+    }
+}
+
+.subsection {
+    &__title {
+        margin: 24px 0 12px;
+    }
+}
+

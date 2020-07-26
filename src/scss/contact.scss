@@ -1,0 +1,105 @@
+@import './variables';
+
+.contact-page__header {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 1024px) {
+        min-height: 30vh;
+    }
+}
+
+.contact-wrapper {
+    position: relative;
+    @media (min-width: 1024px) {
+        min-height: 140vh;
+    }
+}
+
+.contact-info {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 1024px) {
+        padding-top: 40px;
+        width: 45%;
+        text-align: center;
+    }
+    &__name {
+        text-align: center;
+        padding: 20px;
+        @media (min-width: 768px) {
+            font-size: 22px;
+        }
+        @media (min-width: 1024px) {
+            font-size: 24px;
+            padding: 0 0 30px 0;
+        }
+    }
+    &__data {
+        .contact-info__link {
+            display: block;
+            text-align: center;
+            margin-bottom: 16px;
+            padding: 0 10px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000;
+            transition: color .3s linear;
+            &:hover{
+                color: $primary-color;
+            }
+            @media (min-width: 600px) {
+                font-size: 18px;
+                padding: 0 20px;
+            }
+            @media (min-width: 1024px) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.contact-page__form {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px;
+    @media (min-width: 1024px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+    }
+    .contact-form-title {
+        letter-spacing: 1px;
+        @media (min-width: 768px) {
+            font-size: 22px;
+        }
+        @media (min-width: 1024px) {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+    }
+}
+
+.contact-links {
+    margin: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (min-width: 1024px) {
+        width: 45%;
+        margin: 50px 0;
+    }
+    &__text {
+        width: 100%;
+        text-align: center;
+        @media (min-width: 768px) {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}

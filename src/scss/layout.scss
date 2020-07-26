@@ -1,0 +1,16 @@
+@import './variables';
+
+@import './fonts';
+@import './blocks';
+@import './buttons';
+@import './main-gallery.scss';
+@import './block-list.scss';
+
+.under-construction {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+}

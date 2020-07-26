@@ -1,0 +1,184 @@
+@import './variables';
+
+.contact-form {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    &__field {
+        * {
+            display: block;
+            position: relative;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 500;
+        }
+    }
+}
+
+.contact-form__label {
+    width: 100%;
+    margin: 0 auto 5px;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+    padding: 6px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #fff;
+    @media (min-width: 768px) {
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+    border: 2px solid #fff;
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+    color: #daa;
+}
+
+
+.contact-form__input,
+.contact-form__textarea,
+.contact-form__agreement {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form__textarea {
+    height: 250px;
+    @media (min-width: 1024px) {
+        height: 200px;
+    }
+}
+
+.error-box {
+    height: 30px;
+    .contact-form__error {
+        color: #fff;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin: 5px 0;
+    }
+}
+
+.contact-from__checkbox-label {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.contact-form__btn {
+    padding: 8px 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+    @media (min-width: 1024px) {
+        padding: 12px 20px;
+    }
+    &:hover {
+        background-color: #fff;
+        color: $primary-color;
+    }
+}
+
+
+// chceckbox
+
+.contact-form__agreement {
+    position: relative;
+}
+
+.checkbox-wrapper {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: translateX(-100%);
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    clear: both;
+    .checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .checkbox-custom {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 24px;
+        width: 24px;
+        background-color: transparent;
+        border-radius: 5px;
+        transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        border: 2px solid #fff;
+        &::after {
+            position: absolute;
+            content: "";
+            left: 12px;
+            top: 12px;
+            height: 0px;
+            width: 0px;
+            border-radius: 5px;
+            border: solid $primary-color;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(0deg) scale(0);
+            -ms-transform: rotate(0deg) scale(0);
+            transform: rotate(0deg) scale(0);
+            opacity:1;
+            transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+        }
+    }
+}
+
+
+.checkbox-wrapper input:checked ~ .checkbox-custom {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    border: 2px solid #FFFFFF;
+}
+
+
+.checkbox-wrapper input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid $primary-color;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}

@@ -1,0 +1,133 @@
+@import './variables';
+
+.harbor-about {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.harbor-about__title, .harbor-about__text {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.harbor-about__btn {
+    margin: 0 auto;
+}
+
+.harbor-gallery {
+    margin: 50px 0;
+    @media (min-width: 768px) {
+        margin: 50px 0 100px;
+    }
+    .main-gallery__btn-box {
+        background-color: $second-color;
+    }
+}
+
+
+.our-talents {
+    position: relative;
+    margin-top: 100px;
+    padding: 30px 0 100px;
+    @media (min-width: 768px) {
+        padding: 50px 0 150px;
+    }
+    background-image: url("../images/our-talents-images/img2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    &__title {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 1;
+        width: 90%;
+        margin: 50px auto;
+    }
+}
+
+// Gallery images
+
+// .harbor-gallery__img1 {
+//     background-image: url("../images/harbor-images/img1.jpg");
+// }
+// .harbor-gallery__img2 {
+//     background-image: url("../images/harbor-images/img2.jpg");
+// }
+// .harbor-gallery__img4 {
+//     background-image: url("../images/harbor-images/img4.jpg");
+// }
+// .harbor-gallery__img5 {
+//     background-image: url("../images/harbor-images/img5.jpg");
+// }
+// .harbor-gallery__img6 {
+//     background-image: url("../images/harbor-images/img6.jpg");
+// }
+// .harbor-gallery__img7 {
+//     background-image: url("../images/harbor-images/img7.jpg");
+// }
+// .harbor-gallery__img8 {
+//     background-image: url("../images/harbor-images/img8.jpg");
+// }
+
+
+// .our-talents-gallery__img1 {
+//     background-image: url("../images/our-talents-images/img1.jpg");
+// }
+// .our-talents-gallery__img2 {
+//     background-image: url("../images/our-talents-images/img2.jpg");
+// }
+// .our-talents-gallery__img3 {
+//     background-image: url("../images/our-talents-images/img3.jpg");
+// }
+// .our-talents-gallery__img4 {
+//     background-image: url("../images/our-talents-images/img4.jpg");
+// }
+// .our-talents-gallery__img5 {
+//     background-image: url("../images/our-talents-images/img5.jpg");
+// }
+// .our-talents-gallery__img6 {
+//     background-image: url("../images/our-talents-images/img6.jpg");
+// }
+// .our-talents-gallery__img7 {
+//     background-image: url("../images/our-talents-images/img7.jpg");
+// }
+
+.main-gallery__btn-box {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primary-color;
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+        @media (min-width: 360px) {
+            width: 150px;
+            height: 150px;
+        }
+        @media (min-width: 768px) {
+            width: 250px;
+            height: 200px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 300px;
+            height: 250px;
+        }
+}

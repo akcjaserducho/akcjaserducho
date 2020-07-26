@@ -1,0 +1,91 @@
+@import './variables';
+
+.how-we-help {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 150px 150px 150px;
+    grid-template-areas: "box1 box1" "box6 box6" "box2 box3" "box4 box7" "box8 box5";
+    gap: 12px;
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto 200px;
+        grid-template-areas: "box1 box1 box1 box1" "box2 box2 box6 box6" "box3 box7 box5 box8";
+    }
+}
+
+.how-we-help__box1,
+.how-we-help__box6,
+.how-we-help__box7,
+.how-we-help__box8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.how-we-help__box2,
+.how-we-help__box3,
+.how-we-help__box4,
+.how-we-help__box5 {
+    overflow: hidden;
+}
+
+.how-we-help__box2 *,
+.how-we-help__box3 *,
+.how-we-help__box4 *,
+.how-we-help__box5 * {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .6s linear;
+    overflow: hidden;
+    &:hover {
+        @media (min-width: 1024px){
+            transform: scale(1.2);
+        }
+    }
+}
+
+.how-we-help__box1 {
+    grid-area: box1;
+}
+
+.how-we-help__box2 {
+    grid-area: box2;
+}
+
+.how-we-help__box3 {
+    grid-area: box3;
+}
+
+.how-we-help__box4 {
+    grid-area: box4;
+}
+
+.how-we-help__box5 {
+    grid-area: box5;
+}
+
+.how-we-help__box6 {
+    grid-area: box6;
+    // padding: 20px 0;
+    @media (min-width: 768px) {
+        padding: 40px;
+    }
+}
+
+.how-we-help__box7 {
+    grid-area: box7;
+    padding: 0;
+    background-color: $primary-color;
+}
+.how-we-help__box8 {
+    grid-area: box8;
+    background-color: $second-color;
+}

@@ -1,0 +1,14 @@
+.error-page {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 20px;
+        @media (min-width: 768px) {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+}

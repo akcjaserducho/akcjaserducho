@@ -1,0 +1,69 @@
+@import './variables';
+
+.need-help {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 150px 150px;
+    grid-template-areas: "box1 box1" "box2 box2" "box4 box5" "box6 box3";
+    gap: 12px;
+    @media (min-width: 768px) {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto 200px 200px;
+    grid-template-areas: "box1 box1 box1" "box2 box4 box5" "box2 box3 box6";
+    }
+}
+.need-help__box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.need-help__box4 *,
+.need-help__box5 *,
+.need-help__box6 * {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .6s linear;
+    overflow: hidden;
+    &:hover {
+        @media (min-width: 1024px){
+            transform: scale(1.2);
+        }
+    }
+}
+
+.need-help__box1 {
+    grid-area: box1;
+}
+
+.need-help__box2 {
+    grid-area: box2;
+    @media (min-width: 768px) {
+        padding: 40px;
+    }
+}
+
+.need-help__box3 {
+    grid-area: box3;
+    background-color: $primary-color;
+}
+
+.need-help__box4 {
+    grid-area: box4;
+    overflow: hidden;
+}
+
+.need-help__box5 {
+    grid-area: box5;
+    overflow: hidden;
+}
+
+.need-help__box6 {
+    grid-area: box6;
+    overflow: hidden; 
+}
