@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 import links from "../constants/links"
 import "../scss/navbar.scss"
 import {

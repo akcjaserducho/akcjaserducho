@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import {Link} from 'gatsby';
 import '../scss/support-header.scss';
 import '../scss/support.scss';
 import BgImg from '../components/BgImg';
@@ -110,7 +109,7 @@ const support = ({data}) => {
                     <section className="subsection support-option">
                         <h3 className="subsetion__title support-option__title">Zostań Serduchowym św. Mikołajem</h3>
                         <p className="support-option__text">Jest to akcja, którą realizujemy przed świętami Bożego Narodzenia. Nasi podopieczni piszą listy do św. Mikołaja, a my poszukujemy osób, które tymi świętymi Mikołajami zostaną Wówczas przekazujemy list i prosimy o odpowiedź, zarówno w postaci prezentu, jak i w postaci listu do naszych podopiecznych.</p>
-                        <Link to="/kontakt" className="btn">Skontaktuj się z nami</Link>
+                        <a href="/kontakt" className="btn">Skontaktuj się z nami</a>
                     </section>
 
                     {/* <section className="subsection support-option">

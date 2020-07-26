@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import Cooperation from "../components/Cooperation"
 import Founders from "../components/Founders"
@@ -126,13 +125,13 @@ const index = ({ data }) => {
             </p>
           </div>
           <div className="need-help__box3">
-            <Link to="/kontakt" className="btn-second">
+            <a href="/kontakt" className="btn-second">
               Skontaktuj się z nami
               <span className="btn-second__span"></span>
               <span className="btn-second__span"></span>
               <span className="btn-second__span"></span>
               <span className="btn-second__span"></span>
-            </Link>
+            </a>
           </div>
           <div className="need-help__box4">
             <BgImg
