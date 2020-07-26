@@ -79,7 +79,7 @@ const support = ({data}) => {
                         <h3 className="subsetion__title support-option__title">Przekaż darowiznę</h3>
                         <p className="support-option__text">Fundacja Akcja Serducho<br/>ul. Marii Konopnickiej<br/>71-151 Szczecin<br/>Nr konta: 62 2490 0005 0000 4530 2848 4568<br/>Tytuł: darowizna na cele statutowe</p>
                         <p className="support-option__text">Darowiznę możesz odliczyć od podatku od osób prawnych, jak również fizycznych.</p>
-                        <Link to="/darowizna-a-podatki" className="btn">Odpisywanie od podatku</Link>
+                        <a href="/darowizna-a-podatki" className="btn">Odpisywanie od podatku</a>
                     </section>
 
                     <section className="subsection support-option-flex">

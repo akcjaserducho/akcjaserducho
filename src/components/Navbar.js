@@ -20,9 +20,9 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar__header">
         <div className="navbar__logo">
-          <Link to="/">
+          <a href="/">
             <img src={Logo} alt="akcjaserducho.pl" />
-          </Link>
+          </a>
         </div>
 
         <button
