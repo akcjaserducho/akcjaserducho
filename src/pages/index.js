@@ -172,7 +172,7 @@ const index = ({ data }) => {
             </p>
           </div>
           <div className="trust-us__box3">
-            <a to="/zespol" className="btn-second">
+            <a href="/zespol" className="btn-second">
               Poznaj nasz zespół
               <span className="btn-second__span"></span>
               <span className="btn-second__span"></span>

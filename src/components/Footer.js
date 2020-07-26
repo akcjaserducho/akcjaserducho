@@ -1,7 +1,16 @@
 import React from "react"
 import "../scss/footer.scss"
+import styled from "styled-components"
 import MainLogo from "../images/akcja-serducho-logo-male.png"
 import HarborLogo from "../images/przystan-logo.png"
+
+const SiteAuthor = styled.a`
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: bold;
+`
 
 const Footer = () => {
   return (
@@ -78,8 +87,10 @@ const Footer = () => {
           &copy; Fundacja Akcja Serducho {new Date().getFullYear()}. Wszystkie
           prawa zastrzeżone
           <br />
-          Projekt i wykonanie{" "}
-          <span className="site-author">Trojnacki & Draganek</span>
+          Projekt i wykonanie:{" "}
+          <SiteAuthor href="https://netfine.pl" className="site-author">
+            Netfine
+          </SiteAuthor>
         </p>
       </div>
     </footer>
